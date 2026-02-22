@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | AusFinanz</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+    <!-- Login Section -->
+    <section class="admin-login" id="admin-login">
+        <div class="admin-login__box">
+            <h1 class="admin-login__title text-gold" data-i18n="admin_title">Админ-панель</h1>
+
+            <form id="login-form" class="form">
+                <div class="form__group">
+                    <label class="form__label" data-i18n="admin_password">Пароль</label>
+                    <input type="password" id="admin-password" class="form__input" required autofocus>
+                    <p class="form__error" id="login-error"></p>
+                </div>
+
+                <button type="submit" class="btn btn--primary">
+                    <span data-i18n="admin_login">Войти</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Admin Panel -->
+    <div class="admin-panel" id="admin-panel">
+        <div class="container">
+
+            <header class="admin-panel__header">
+                <h1 class="admin-panel__title text-gold" data-i18n="admin_title">Админ-панель</h1>
+                <div class="admin-panel__actions">
+                    <button class="btn btn--outline btn--back" id="refresh-btn">
+                        <span data-i18n="admin_refresh">Обновить</span>
+                    </button>
+                    <button class="btn btn--outline btn--back" id="reset-btn">
+                        <span data-i18n="admin_reset">Сбросить всё</span>
+                    </button>
+                    <button class="btn btn--outline btn--back" id="logout-btn">
+                        <span data-i18n="admin_logout">Выйти</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Stats Overview -->
+            <div class="admin-card">
+                <h2 class="admin-card__title" data-i18n="admin_stats">Статистика посещений</h2>
+                <div class="admin-stat">
+                    <span class="admin-stat__label" data-i18n="admin_total_visits">Всего посещений</span>
+                    <span class="admin-stat__value" id="stat-total">—</span>
+                </div>
+                <div class="admin-stat">
+                    <span class="admin-stat__label" data-i18n="admin_unique_visits">Уникальных посетителей</span>
+                    <span class="admin-stat__value" id="stat-unique">—</span>
+                </div>
+                <div class="admin-stat">
+                    <span class="admin-stat__label" data-i18n="admin_today_visits">Посещений сегодня</span>
+                    <span class="admin-stat__value" id="stat-today">—</span>
+                </div>
+            </div>
+
+            <!-- Button Clicks -->
+            <div class="admin-card">
+                <h2 class="admin-card__title" data-i18n="admin_clicks">Клики по кнопкам</h2>
+                <div id="clicks-list">
+                    <p style="color: var(--text-muted);">Нет данных</p>
+                </div>
+            </div>
+
+            <!-- Form Submissions -->
+            <div class="admin-card">
+                <h2 class="admin-card__title" data-i18n="admin_forms">Отправленные формы</h2>
+                <div class="admin-stat">
+                    <span class="admin-stat__label">Всего отправок</span>
+                    <span class="admin-stat__value" id="stat-forms">—</span>
+                </div>
+            </div>
+
+            <!-- User Paths -->
+            <div class="admin-card">
+                <h2 class="admin-card__title" data-i18n="admin_paths">Пути пользователей</h2>
+                <div id="paths-list">
+                    <p style="color: var(--text-muted);">Нет данных</p>
+                </div>
+            </div>
+
+            <!-- Heatmap Placeholder -->
+            <div class="admin-card">
+                <h2 class="admin-card__title" data-i18n="admin_heatmap">Тепловая карта</h2>
+                <div class="admin-heatmap">
+                    <p>Требуется интеграция с внешним сервисом аналитики</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../../js/translations.js"></script>
+    <script src="../../js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loginForm = document.getElementById('login-form');
+            const adminPanel = document.getElementById('admin-panel');
+            const adminLogin = document.getElementById('admin-login');
+            const passwordInput = document.getElementById('admin-password');
+            const loginError = document.getElementById('login-error');
+
+            // Components
+            const statTotal = document.getElementById('stat-total');
+            const statUnique = document.getElementById('stat-unique');
+            const statToday = document.getElementById('stat-today');
+            const statForms = document.getElementById('stat-forms');
+            const clicksList = document.getElementById('clicks-list');
+            const pathsList = document.getElementById('paths-list');
+
+            const refreshBtn = document.getElementById('refresh-btn');
+            const resetBtn = document.getElementById('reset-btn');
+            const logoutBtn = document.getElementById('logout-btn');
+
+            // Simple login check
+            loginForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                if (passwordInput.value === '9988z') {
+                    adminLogin.style.display = 'none';
+                    adminPanel.style.display = 'block';
+                    updateStats();
+                    // Auto-logout after 30 minutes
+                    setTimeout(() => {
+                        location.reload();
+                    }, 30 * 60 * 1000);
+                } else {
+                    loginError.textContent = 'Неверный пароль';
+                    loginError.style.display = 'block';
+                    passwordInput.value = '';
+                }
+            });
+
+            // Logout
+            logoutBtn.addEventListener('click', () => {
+                location.reload();
+            });
+
+            // Update statistics
+            function updateStats() {
+                if (!window.AusFinanzAnalytics) return;
+
+                const stats = window.AusFinanzAnalytics.getStatsSummary();
+
+                statTotal.textContent = stats.totalVisits;
+                statUnique.textContent = stats.uniqueVisitors;
+                statToday.textContent = stats.todayVisits;
+                statForms.textContent = stats.forms;
+
+                // Render clicks
+                if (stats.topClicks.length > 0) {
+                    clicksList.innerHTML = stats.topClicks.map(([id, count]) => `
+                        <div class="admin-stat">
+                            <span class="admin-stat__label">${id}</span>
+                            <span class="admin-stat__value">${count}</span>
+                        </div>
+                    `).join('');
+                } else {
+                    clicksList.innerHTML = '<p style="color: var(--text-muted);">Нет данных</p>';
+                }
+
+                // Render paths (last 10)
+                const recentPaths = stats.paths.slice(-10).reverse();
+                if (recentPaths.length > 0) {
+                    pathsList.innerHTML = recentPaths.map(path => `
+                        <div class="admin-path" style="padding: 10px; border-bottom: 1px solid var(--border-color); margin-bottom: 5px;">
+                            <div style="font-size: 12px; color: var(--text-muted);">${new Date(path.startTime).toLocaleString()}</div>
+                            <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: 5px;">
+                                ${path.pages.map(p => `
+                                    <span style="background: var(--bg-card); padding: 2px 6px; border-radius: 4px; font-size: 11px;">
+                                        ${p.page.split('/').pop() || 'home'}
+                                    </span>
+                                `).join(' → ')}
+                            </div>
+                        </div>
+                    `).join('');
+                } else {
+                    pathsList.innerHTML = '<p style="color: var(--text-muted);">Нет данных</p>';
+                }
+            }
+
+            // Refresh buttons
+            refreshBtn.addEventListener('click', updateStats);
+
+            resetBtn.addEventListener('click', () => {
+                if (confirm('Вы действительно хотите удалить всю статистику?')) {
+                    window.AusFinanzAnalytics.resetAnalytics();
+                    updateStats();
+                }
+            });
+        });
+    </script>
+
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+</body>
+
+</html>

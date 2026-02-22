@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AusFinanz - Финансовые ЛайфХаки в Германии</title>
+  <meta name="description"
+    content="Финансовые консультации для переселенцев в Германию. Чеклисты, помощь с документами, страхованием, налогами.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Profile Section -->
+    <section class="profile section" data-animate>
+      <img src="img/ausfinanz.jpg" alt="AusFinanz" class="profile__photo">
+      <h1 class="profile__title" data-i18n="title">Финансовые ЛайфХаки</h1>
+      <p class="profile__subtitle" data-i18n="subtitle">в Германии</p>
+    </section>
+
+    <!-- Language Switcher -->
+    <div class="lang-switcher" data-animate>
+      <button class="lang-btn" data-lang="UA">UA</button>
+      <button class="lang-btn" data-lang="EN">EN</button>
+      <button class="lang-btn" data-lang="RO">RO</button>
+      <button class="lang-btn" data-lang="TR">TR</button>
+      <button class="lang-btn" data-lang="KZ">KZ</button>
+      <button class="lang-btn" data-lang="PL">PL</button>
+      <button class="lang-btn" data-lang="BG">BG</button>
+      <button class="lang-btn active" data-lang="RU">RU</button>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- CTA 1: Arrive -->
+    <section id="arrive" class="cta-card" data-animate>
+      <p class="cta-card__text" data-i18n="cta1_text">
+        Планируешь приехать или уже приехал в Германию? Не знаешь с чего начать и хочешь правильно и быстро упаковаться,
+        спокойно жить и работать без рисков, вымыслов и недопониманий? Тебе сюда!
+      </p>
+      <a href="html/arrive.html" class="btn btn--primary btn--main" data-track="cta_arrive" data-i18n="cta1_btn_full">
+        УВЕРЕННО ПРИЕХАТЬ В ГЕРМАНИЮ
+      </a>
+    </section>
+
+    <!-- CTA 2: Citizen -->
+    <section id="citizen" class="cta-card" data-animate>
+      <p class="cta-card__text" data-i18n="cta2_text">
+        Живёшь и работаешь в Германии и хочешь получить максимум от самого социального государства Европы? Жми на кнопку
+        и получай бесплатно чеклисты, консультации и контакты специалистов!
+      </p>
+      <a href="html/citizen.html" class="btn btn--primary btn--main" data-track="cta_citizen" data-i18n="cta2_btn_full">
+        УСКОРИТЬСЯ ДО БЮРГЕРА В ГЕРМАНИИ
+      </a>
+    </section>
+
+    <!-- CTA 3: Leave -->
+    <section id="leave" class="cta-card" data-animate>
+      <p class="cta-card__text" data-i18n="cta3_text">
+        Хочешь уехать из Германии навсегда или на время? Не вопрос, тут вся информация!
+      </p>
+      <a href="html/leave.html" class="btn btn--primary btn--main" data-track="cta_leave" data-i18n="cta3_btn_full">
+        УЕХАТЬ БЕЗ ВИСЯКОВ ИЗ ГЕРМАНИИ
+      </a>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Messenger Section -->
+    <section class="messenger-section section" data-animate>
+      <h2 class="messenger-section__title" data-i18n="messenger_title">ПИШИТЕ НАПРЯМУЮ</h2>
+      <p class="messenger-section__subtitle" data-i18n="messenger_subtitle">В МЕССЕНДЖЕРЫ</p>
+      <p class="messenger-section__text" data-i18n="messenger_text">Пишите смело, всё обсудим</p>
+
+      <div class="messenger-buttons">
+        <a href="https://t.me/ausfinanz" target="_blank" class="btn btn--messenger" data-track="telegram">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z" />
+          </svg>
+          Telegram
+        </a>
+        <a href="https://wa.me/4915116575465" target="_blank" class="btn btn--messenger" data-track="whatsapp">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          WhatsApp
+        </a>
+      </div>
+
+      <div class="messenger-nick">
+        <p class="messenger-nick__label" data-i18n="messenger_nick_label">Или просто скопируйте мой ник</p>
+        <p class="messenger-nick__value" onclick="AusFinanzAnalytics.copyToClipboard('@ausfinanz')">@ausfinanz</p>
+        <p class="messenger-nick__label" data-i18n="messenger_nick_hint">и найдите меня вручную</p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Registration Block -->
+    <section id="registration" class="cta-card section" data-animate>
+      <h2 class="form-section__title" data-i18n="form_title">РЕГИСТРАЦИЯ</h2>
+      <p class="form-section__subtitle" data-i18n="form_subtitle">НА ОНЛАЙН КОНСУЛЬТАЦИЮ</p>
+      <a href="html/booking/registration.html" class="btn btn--primary" data-track="booking_registration">
+        <span data-i18n="btn_registration">РЕГИСТРАЦИЯ</span>
+      </a>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Booking Block -->
+    <section id="booking" class="cta-card section" data-animate" style="display: none;">
+      <h2 class="form-section__title" data-i18n="calendar_title">БРОНИРОВАНИЕ</h2>
+      <p class="form-section__subtitle" data-i18n="calendar_subtitle">ОНЛАЙН КОНСУЛЬТАЦИИ</p>
+      <a href="html/booking/calendar.html" class="btn btn--primary" data-track="booking_calendar">
+        <span data-i18n="calendar_title">ЗАБРОНИРОВАТЬ ВСТРЕЧУ</span>
+      </a>
+    </section>
+
+    <div class="divider" style="display: none;"></div>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section section" data-animate>
+      <h2 class="faq-section__title" data-i18n="faq_title">ЧАСТЫЕ ВОПРОСЫ</h2>
+      <p class="faq-section__subtitle" data-i18n="faq_subtitle">ОТВЕТЫ НА СТАРТЕ</p>
+
+      <div class="faq-list">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item">
+          <button class="faq-item__question">
+            <span data-i18n="faq_q1">Это бесплатно или сколько стоит?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner" data-i18n="faq_a1">
+              Брат/сестра, у меня 3 бесплатные консультации в неделю специально для тебя и твоей семьи. Далее ты
+              самостоятельно взаимодействуешь в почти автоматическом режиме с профильными организациями и
+              соответствующими экспертами - хотя большинство этих услуг тоже бесплатны или по минимуму, без подвохов,
+              сто тыщ раз уже проверял.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+          <button class="faq-item__question">
+            <span data-i18n="faq_q2">Как проходит первая консультация?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner" data-i18n="faq_a2">
+              Около получаса - и ты в деле: отвечаешь на ~10 простых вопросов онлайн (куришь или нет - а это важно знать
+              для государства Германия, прикинь...), получаешь готовые чек-листы по страховке и пенсии, плюс бесплатные
+              консультации иммиграционного эксперта и созвон со мной когда удобно. Мы с опытными коллегами всегда рядом
+              - легко и быстро!
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+          <button class="faq-item__question">
+            <span data-i18n="faq_q3">Это только для богатых или мне подойдёт?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner" data-i18n="faq_a3">
+              Тебе как раз подойдёт - помогаю всем семьям от врачей до ИТшников, от нуля на счету до 100к+ активами.
+              Вместе составим план: страховки (жизнь, здоровье, имущество), адвокатскую защиту, Kranken с бонусами
+              (отдых бесплатно + импланты покрывают полностью) - как раз под твой карман и жизнь в Германии.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+          <button class="faq-item__question">
+            <span data-i18n="faq_q4">Сколько ждать результатов?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner" data-i18n="faq_a4">
+              Сегодня же получишь первые шаги, а через 1-3 месяца защита + накопления уже работают на тебя и твою семью:
+              Kranken (отдых+импланты), жильё с дотациями (семья/дети - государство доплачивает), пенсия где тоже
+              государство добавляет сверху если участвуешь в программе. И пару десятков других плюшек - и ты уже на
+              правильном пути, ты поймёшь и почувствуешь это сам.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item">
+          <button class="faq-item__question">
+            <span data-i18n="faq_q5">А если я в финансах полный ноль?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner" data-i18n="faq_a5">
+              Не парься, объясню как другу за кофе - без умных слов. 95% моих ребят, девчат и/или семей начинали с
+              чистого листа (прикинь, даже "а где моя пенсия?" или "что за Kranken?"), и все разобрались за 1-2 встречи.
+              Был парень издалека - ноль знаний, через месяц семья в плюсе с бонусами. Спокуха.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="faq-item">
+          <button class="faq-item__question">
+            <span data-i18n="faq_q6">Почему тебе можно доверять?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner" data-i18n="faq_a6">
+              Сам 5 лет в теме, а мои опытные коллеги уже более 50 лет в этой теме, прикинь! Мы всегда закрываем твои
+              вопросы на 100% - реальные результаты говорят сами за себя, и ты сразу почувствуешь разницу.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 7 -->
+        <div class="faq-item">
+          <button class="faq-item__question">
+            <span data-i18n="faq_q7">Только немцам или иностранцам тоже?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner" data-i18n="faq_a7">
+              Особенно иностранцам как ты - с переводами, оформлением резидентства, плюс бесплатные консультации
+              иммиграционного эксперта. Уже несколько тысяч таких людей - одиночек и семей, от дворников до профессоров
+              - на расслабоне с защитой и бонусами.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 8 -->
+        <div class="faq-item">
+          <button class="faq-item__question">
+            <span data-i18n="faq_q8">Можно свалить в любой момент?</span>
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-item__answer">
+            <div class="faq-item__answer-inner" data-i18n="faq_a8">
+              Конечно, без вопросов и штрафов, всё в договорных рамках и согласно Закону. Но 90% остаются надолго -
+              когда почувствуешь (бонусы, дотации, спокойствие для семьи), сам(а) не захочешь уходить. Я и мои опытные
+              коллеги всегда рядом.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+
+
+      <nav class="footer__links">
+        <a href="html/law/impressum.html" class="footer__link">Impressum</a>
+        <a href="html/law/datenschutz.html" class="footer__link">Datenschutz</a>
+        <a href="html/law/stornierung.html" class="footer__link">Stornierung</a>
+        <a href="html/law/agb.html" class="footer__link">AGB</a>
+        <a href="html/law/cookie.html" class="footer__link">Cookie-Richtlinie</a>
+        <a href="html/law/beschwerde.html" class="footer__link">Beschwerde</a>
+        <a href="html/law/jobs.html" class="footer__link">Jobs</a>
+      </nav>
+
+      <p class="footer__copyright" data-i18n="footer_copyright">Copyright © AusFinanz</p>
+      <p class="footer__vat" data-i18n="footer_vat">All prices incl. VAT.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-to-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/email-sender.js"></script>
+</body>
+
+</html>

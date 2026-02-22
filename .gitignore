@@ -1,0 +1,4 @@
+# Exclude temporary and backup folders
+.kilocode/
+__bckp/
+_tz/
