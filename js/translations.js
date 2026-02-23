@@ -12,7 +12,7 @@ const translations = window.AusFinanzTranslationsData;
 let currentLang = localStorage.getItem('ausfinanz_lang') || 'RU';
 
 // List of supported languages
-const SUPPORTED_LANGUAGES = ['RU', 'UA', 'EN', 'RO', 'TR', 'KZ', 'PL', 'BG'];
+const SUPPORTED_LANGUAGES = ['RU', 'UA', 'RO', 'TR', 'KZ', 'PL', 'BG'];
 
 // Calculate base path from the script's own location
 const currentScript = document.currentScript || (function () {
