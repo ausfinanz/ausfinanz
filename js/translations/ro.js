@@ -13,7 +13,7 @@ window.AusFinanzTranslationsData.RO = {
     messenger_text: "Scrie cu încredere, vom discuta totul",
     cl_content_placeholder: "[ Conținut detaliat al listei de verificare va fi adăugat în limba selectată în curând. ]",
     cl_date_label: "Data actualizării: ",
-    cl_nlp_value: "Această listă de verificare a fost creată pe baza experienței reale a sute de oameni care au parcurs acest drum. Fiecare punct înseamnă timp, bani și nervi economisiți.\n\nÎn prezent, există numai în limba rusă. Salvați pagina, traduceți-o, personalizați-o, imprimați-o și folosiți-o ca navigator personal.",
+    cl_nlp_value: "Această listă de verificare a fost creată pe baza experienței reale a sute de oameni care au parcurs acest drum. Fiecare punct înseamnă timp, bani și nervi economisiți.\n\nÎn prezent, această listă de verificare există doar în limba rusă. Puteți salva pagina, o traduce în orice limbă, o completa sau modifica după necesitățile dvs., o imprima și o folosiți ca navigator personal.",
     messenger_nick_label: "Sau pur și simplu copiază nick-ul meu",
     messenger_nick_hint: "și caută-mă manual",
     form_title: "ÎNREGISTRARE",

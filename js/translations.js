@@ -194,7 +194,7 @@ if (document.readyState === 'loading') {
   initTranslations();
 }
 
-// Export for use in other scripts
+  // Export for use in other scripts
 window.t = t;
 window.AusFinanzTranslations = {
   t,

@@ -13,7 +13,7 @@ window.AusFinanzTranslationsData.PL = {
     messenger_text: "Pisz śmiało, wszystko omówimy",
     cl_content_placeholder: "[ Szczegółowa treść listy kontrolnej zostanie dodana w wybranym języku wkrótce. ]",
     cl_date_label: "Data aktualizacji: ",
-    cl_nlp_value: "Ta lista kontrolna została stworzona na podstawie realnego doświadczenia setek osób, które przeszły tę drogę. Każdy punkt to zaoszczędzony czas, pieniądze i nerwy.\n\nObecnie istnieje tylko w języku rosyjskim. Zapisz stronę, przetłumacz, dostosuj do siebie, wydrukuj i używaj jako osobistego nawigatora.",
+    cl_nlp_value: "Ta lista kontrolna została stworzona na podstawie realnego doświadczenia setek osób, które przeszły tę drogę. Każdy punkt to zaoszczędzony czas, pieniądze i nerwy.\n\nObecnie ta lista kontrolna istnieje tylko w języku rosyjskim. Możesz zapisać stronę, przetłumaczyć ją na dowolny język, uzupełniać lub modyfikować według własnych potrzeb, wydrukować i użyć jako osobistego nawigatora.",
     messenger_nick_label: "Albo po prostu skopiuj mój nick",
     messenger_nick_hint: "i znajdź mnie ręcznie",
     form_title: "REJESTRACJA",

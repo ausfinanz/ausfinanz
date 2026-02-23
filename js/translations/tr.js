@@ -13,7 +13,7 @@ window.AusFinanzTranslationsData.TR = {
     messenger_text: "Çekinmeden yazın, her şeyi konuşalım",
     cl_content_placeholder: "[ Detaylı kontrol listesi içeriği seçilen dilde yakında eklenecektir. ]",
     cl_date_label: "Son güncelleme tarihi: ",
-    cl_nlp_value: "Bu kontrol listesi, bu yolu kat eden yüzlerce insanın gerçek deneyimine dayanmaktadır. Her madde tasarruf edilen zaman, para ve sinirler demektir.\n\nŞu anda sadece Rusça dilinde mevcuttur. Sayfayı kaydedin, çevirin, kendinize göre düzenleyin, yazdırın ve kişisel navigatör olarak kullanın.",
+    cl_nlp_value: "Bu kontrol listesi, bu yolu kat eden yüzlerce insanın gerçek deneyimine dayanmaktadır. Her madde tasarruf edilen zaman, para ve sinirler demektir.\n\nŞu anda bu kontrol listesi sadece Rusça dilinde mevcuttur. Sayfayı kaydedebilir, herhangi bir dile çevirebilir, ihtiyaçlarınıza göre tamamlayabilir veya değiştirebilir, yazdırabilir ve kişisel navigatör olarak kullanabilirsiniz.",
     messenger_nick_label: "Veya sadece kullanıcı adımı kopyalayın",
     messenger_nick_hint: "ve beni manuel olarak bulun",
     form_title: "KAYIT",
