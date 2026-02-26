@@ -1,4 +1,9 @@
 # Exclude temporary and backup folders
+.git/
 .kilocode/
+.vscode/
 __bckp/
+_tmp/
 _tz/
+_tz_wizard/
+
