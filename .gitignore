@@ -1,4 +1,5 @@
 # Exclude temporary and backup folders
+.claude/
 .git/
 .kilocode/
 .vscode/
