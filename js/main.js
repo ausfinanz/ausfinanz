@@ -19,6 +19,7 @@ const AusFinanz = {
             this.initScrollToTop();
             this.initFAQ();
             this.initProfileReset();
+            this.initGoogleAnalytics();
         } catch (e) {
             console.error('AusFinanz initialization error:', e);
             // Try to initialize FAQ separately if it failed during general init
@@ -86,8 +87,70 @@ const AusFinanz = {
         if (!analytics.clicks) analytics.clicks = {};
         if (!analytics.forms) analytics.forms = [];
         if (!analytics.paths) analytics.paths = [];
+        if (!analytics.events) analytics.events = [];
 
         this.saveAnalyticsData(analytics);
+    },
+
+    /**
+     * Initialize Google Analytics integration
+     */
+    initGoogleAnalytics() {
+        // Check if gtag is available (Google Analytics script loaded)
+        if (typeof gtag === 'undefined') {
+            console.warn('Google Analytics not loaded yet');
+            return;
+        }
+
+        // Track initial page view
+        this.trackPageViewGA();
+
+        // Track events to Google Analytics
+        this.trackEventsToGA();
+    },
+
+    /**
+     * Track page view in Google Analytics
+     */
+    trackPageViewGA() {
+        if (typeof gtag === 'undefined') return;
+
+        gtag('event', 'page_view', {
+            page_title: document.title,
+            page_location: window.location.href,
+            page_path: window.location.pathname,
+            page_referrer: document.referrer || 'direct'
+        });
+    },
+
+    /**
+     * Track custom events to Google Analytics
+     */
+    trackEventGA(eventName, data = {}) {
+        if (typeof gtag === 'undefined') return;
+
+        gtag('event', eventName, {
+            event_category: data.category || 'User Interaction',
+            event_label: data.label || '',
+            value: data.value || 1,
+            ...data
+        });
+    },
+
+    /**
+     * Sync existing events to Google Analytics
+     */
+    trackEventsToGA() {
+        const analytics = this.getAnalyticsData();
+        const events = analytics.events || [];
+
+        events.forEach(event => {
+            this.trackEventGA(event.name, {
+                ...event.data,
+                timestamp: event.timestamp,
+                page: event.page
+            });
+        });
     },
 
     /**
@@ -197,6 +260,13 @@ const AusFinanz = {
         analytics.clicks[buttonId]++;
 
         this.saveAnalyticsData(analytics);
+
+        // Also track in Google Analytics
+        this.trackEventGA('button_click', {
+            button_id: buttonId,
+            category: 'Navigation',
+            label: buttonId
+        });
     },
 
     /**
