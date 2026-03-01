@@ -2,9 +2,8 @@
 .git/
 .kilocode/
 .vscode/
-__bckp/
-_tmp/
-_tz/
-_tz_wizard/
+..bckp/
+.tmp/
+.tz/
+.tz_wizard/
 
-GITHUB_PAGES_SETUP.md
