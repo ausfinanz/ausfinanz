@@ -23,54 +23,6 @@
   <script
     src="https://cloud.ccm19.de/app.js?apiKey=b784077f0b1adcf16f7001b8804bcbbd349357233842e5af&domain=699e06a7b3341ef12e0817c2"
     referrerpolicy="origin"></script>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5PFM8TSB5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    
-    // Initialize Google Analytics 4 with consent management
-    function initGoogleAnalytics() {
-      gtag('js', new Date());
-      gtag('config', 'G-Q5PFM8TSB5', {
-        'anonymize_ip': true,
-        'cookie_flags': 'secure;samesite=strict',
-        'cookie_domain': 'none',
-        'cookie_prefix': 'ga_ausfinanz'
-      });
-    }
-    
-    // Check if user has given consent for analytics
-    function checkAnalyticsConsent() {
-      // Check CCM19 consent
-      if (typeof ccm19 !== 'undefined' && ccm19.getConsent) {
-        const consent = ccm19.getConsent();
-        if (consent && consent.analytics) {
-          initGoogleAnalytics();
-        } else {
-          // Disable Google Analytics if no consent
-          window['ga-disable-G-Q5PFM8TSB5'] = true;
-        }
-      } else {
-        // Fallback: check if consent was given in localStorage
-        const consentGiven = localStorage.getItem('ccm19_analytics_consent');
-        if (consentGiven === 'true') {
-          initGoogleAnalytics();
-        } else {
-          window['ga-disable-G-Q5PFM8TSB5'] = true;
-        }
-      }
-    }
-    
-    // Listen for consent changes
-    if (typeof ccm19 !== 'undefined') {
-      ccm19.on('consentChanged', checkAnalyticsConsent);
-    }
-    
-    // Check consent on page load
-    document.addEventListener('DOMContentLoaded', checkAnalyticsConsent);
-  </script>
 </head>
 
 <body>
@@ -340,6 +292,15 @@
 
     <div class="divider"></div>
 
+  </div>
+
+  <!-- Analytics Status Indicator -->
+  <div id="analytics-status" class="analytics-status" style="display: none;">
+    <div class="analytics-status__content">
+      <span class="analytics-status__icon" id="analytics-icon">📊</span>
+      <span class="analytics-status__text" id="analytics-text">Analytics loading...</span>
+      <button class="analytics-status__close" id="analytics-close" aria-label="Close">✕</button>
+    </div>
   </div>
 
   <!-- Footer -->

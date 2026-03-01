@@ -8,10 +8,122 @@
 
 const AusFinanz = {
     /**
+     * Google Analytics Tracking ID
+     */
+    GA_TRACKING_ID: 'G-Q5PFM8TSB5',
+
+    /**
+     * Dynamically load Google Analytics script
+     * Respects CCM19 cookie consent - only loads GA after user consent
+     */
+    loadGoogleAnalytics() {
+        // Prevent multiple loading
+        if (window.gaLoaded) {
+            // If already loaded, track page view
+            this.trackPageViewGA();
+            return;
+        }
+
+        // Check if we should wait for CCM19 consent
+        const checkConsentAndLoad = () => {
+            // Check if CCM19 is available
+            if (typeof ccm19 !== 'undefined') {
+                // Get consent status from CCM19
+                // 'analytics' or 'statistic' are common category names
+                const consent = ccm19.getConsent ? ccm19.getConsent() : ccm19.hasConsent;
+                
+                let hasAnalyticsConsent = false;
+                
+                // Try different CCM19 API methods
+                if (typeof consent === 'function') {
+                    hasAnalyticsConsent = consent('analytics') || consent('statistic') || consent('statistics');
+                } else if (typeof consent === 'object' && consent !== null) {
+                    hasAnalyticsConsent = consent.analytics || consent.statistics || consent.statistic || false;
+                }
+
+                if (!hasAnalyticsConsent) {
+                    console.log('Waiting for CCM19 analytics consent...');
+                    return false;
+                }
+            }
+            return true;
+        };
+
+        // If no consent yet, wait for it
+        if (!checkConsentAndLoad()) {
+            // Listen for CCM19 consent changes
+            const waitForConsent = () => {
+                if (checkConsentAndLoad()) {
+                    this.loadGAInternal();
+                    // Remove listener after consent is given
+                    if (typeof ccm19 !== 'undefined' && ccm19.off) {
+                        ccm19.off('consentChanged', waitForConsent);
+                    }
+                }
+            };
+
+            // Try to listen for consent changes
+            if (typeof ccm19 !== 'undefined') {
+                if (ccm19.on) {
+                    ccm19.on('consentChanged', waitForConsent);
+                }
+                // Also check periodically in case CCM19 doesn't fire events
+                const consentCheckInterval = setInterval(() => {
+                    if (checkConsentAndLoad()) {
+                        clearInterval(consentCheckInterval);
+                        this.loadGAInternal();
+                    }
+                }, 1000);
+            }
+            return;
+        }
+
+        // Consent already given, load GA
+        this.loadGAInternal();
+    },
+
+    /**
+     * Internal function to load GA script (called after consent verified)
+     */
+    loadGAInternal() {
+        if (window.gaLoaded) return;
+        window.gaLoaded = true;
+
+        // Create and inject the gtag script
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=' + this.GA_TRACKING_ID;
+
+        // Track page view after script loads
+        script.onload = () => {
+            console.log('Google Analytics loaded:', this.GA_TRACKING_ID);
+            this.trackPageViewGA();
+            this.trackEventsToGA();
+        };
+
+        script.onerror = () => {
+            console.error('Failed to load Google Analytics');
+            window.gaLoaded = false; // Allow retry
+        };
+
+        document.head.appendChild(script);
+
+        // Initialize gtag (fallback in case onload doesn't fire)
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', this.GA_TRACKING_ID);
+    },
+
+    /**
      * Initialize all functionality
      */
     init() {
         try {
+            this.loadGoogleAnalytics();
             this.initScrollAnimations();
             this.initAnalytics();
             this.initClickTracking();
@@ -19,7 +131,7 @@ const AusFinanz = {
             this.initScrollToTop();
             this.initFAQ();
             this.initProfileReset();
-            this.initGoogleAnalytics();
+            this.initAnalyticsStatus();
         } catch (e) {
             console.error('AusFinanz initialization error:', e);
             // Try to initialize FAQ separately if it failed during general init
@@ -115,11 +227,11 @@ const AusFinanz = {
     trackPageViewGA() {
         if (typeof gtag === 'undefined') return;
 
-        gtag('event', 'page_view', {
+        // GA4 proper page view tracking
+        gtag('config', this.GA_TRACKING_ID, {
             page_title: document.title,
             page_location: window.location.href,
-            page_path: window.location.pathname,
-            page_referrer: document.referrer || 'direct'
+            page_path: window.location.pathname
         });
     },
 
@@ -436,6 +548,88 @@ const AusFinanz = {
                 }
             });
         });
+    },
+
+    /**
+     * Initialize analytics status indicator
+     */
+    initAnalyticsStatus() {
+        // Wait for EnhancedAnalytics to be available
+        const checkAnalytics = () => {
+            if (typeof window.EnhancedAnalytics !== 'undefined') {
+                this.setupAnalyticsStatus();
+            } else {
+                setTimeout(checkAnalytics, 100);
+            }
+        };
+        checkAnalytics();
+    },
+
+    /**
+     * Setup analytics status indicator
+     */
+    setupAnalyticsStatus() {
+        const statusEl = document.getElementById('analytics-status');
+        const iconEl = document.getElementById('analytics-icon');
+        const textEl = document.getElementById('analytics-text');
+        const closeEl = document.getElementById('analytics-close');
+
+        if (!statusEl || !iconEl || !textEl || !closeEl) return;
+
+        // Close button functionality
+        closeEl.addEventListener('click', () => {
+            statusEl.classList.remove('show');
+        });
+
+        // Listen for analytics status changes
+        const updateStatus = () => {
+            const status = window.EnhancedAnalytics.getStatus();
+            
+            // Determine status type
+            let statusType = 'loading';
+            let statusText = 'Analytics loading...';
+            let statusIcon = '📊';
+
+            if (status.isBlocked) {
+                statusType = 'blocked';
+                statusText = 'Analytics blocked by ad blocker';
+                statusIcon = '🚫';
+            } else if (!status.isConsentGiven) {
+                statusType = 'disabled';
+                statusText = 'Analytics disabled (no consent)';
+                statusIcon = '✋';
+            } else if (status.isGAInitialized) {
+                statusType = 'success';
+                statusText = 'Analytics active';
+                statusIcon = '✅';
+            }
+
+            // Update UI
+            iconEl.textContent = statusIcon;
+            textEl.textContent = statusText;
+            statusEl.className = `analytics-status ${statusType}`;
+            statusEl.classList.add('show');
+
+            // Auto-hide after 5 seconds for success, keep visible for blocked/disabled
+            if (statusType === 'success') {
+                setTimeout(() => {
+                    if (statusEl.classList.contains('success')) {
+                        statusEl.classList.remove('show');
+                    }
+                }, 5000);
+            }
+        };
+
+        // Initial status update
+        updateStatus();
+
+        // Listen for status changes (polling every 2 seconds)
+        setInterval(updateStatus, 2000);
+
+        // Listen for consent changes if CCM19 is available
+        if (typeof ccm19 !== 'undefined') {
+            ccm19.on('consentChanged', updateStatus);
+        }
     }
 };
 

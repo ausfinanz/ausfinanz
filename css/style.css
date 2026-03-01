@@ -1182,6 +1182,99 @@ a:hover {
   }
 }
 
+/* ---------- Analytics Status Indicator ---------- */
+.analytics-status {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all var(--transition-normal);
+}
+
+.analytics-status.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.analytics-status__content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.analytics-status__icon {
+  font-size: 1.2rem;
+  filter: grayscale(1);
+  transition: filter var(--transition-normal);
+}
+
+.analytics-status__text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.analytics-status__close {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+}
+
+.analytics-status__close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+/* Analytics status variants */
+.analytics-status.success .analytics-status__icon {
+  filter: grayscale(0);
+  color: var(--success);
+}
+
+.analytics-status.blocked .analytics-status__icon {
+  filter: grayscale(0);
+  color: var(--error);
+}
+
+.analytics-status.disabled .analytics-status__icon {
+  filter: grayscale(0);
+  color: var(--warning);
+}
+
+.analytics-status.loading .analytics-status__icon {
+  filter: grayscale(1);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
 /* ---------- Toast Notification (TikTok Overlay Style) ---------- */
 .toast {
   position: absolute;
