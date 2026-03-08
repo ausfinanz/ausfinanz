@@ -1,4 +1,4 @@
-﻿window.AusFinanzTranslationsData = window.AusFinanzTranslationsData || {};
+window.AusFinanzTranslationsData = window.AusFinanzTranslationsData || {};
 window.AusFinanzTranslationsData.BG = {
     title: "Финансови Лайфхакове",
     subtitle: "в Германия",
@@ -7,7 +7,7 @@ window.AusFinanzTranslationsData.BG = {
     cta2_text: "Живеете и работите в Германия и искате да извлечете максимума от най-социалната държава в Европа? Натиснете бутона и получете безплатни чек-листове, консултации и контакти на експерти!",
     cta2_btn_full: "УСКОРЕТЕ КЪМ ГРАЖДАНСТВО В ГЕРМАНИЯ",
     cta3_text: "Искате да напуснете Германия завинаги или за известно време? Няма проблем, цялата информация е тук!",
-    cta3_btn_full: "НАПУСНЕТЕ ГЕРМАНИЯ БЕЗ ПРОБЛЕМ",
+    cta3_btn_full: "НАПУСНЕТЕ ГЕРМАНИЯ БЕЗ 'ВИСЯЦИ'",
     messenger_title: "ПИШЕТЕ ДИРЕКТНО",
     messenger_subtitle: "В МЕСИНДЖЪРИТЕ",
     messenger_text: "Пишете смело, ще обсъдим всичко",
@@ -29,7 +29,7 @@ window.AusFinanzTranslationsData.BG = {
     back_to_checklist: "ОБРАТНО КЪМ СПИСЪКА С ЧЕК-ЛИСТОВЕ",
     page_arrive_title: "ДОЙДЕТЕ УВЕРЕНО В ГЕРМАНИЯ",
     page_citizen_title: "УСКОРЕТЕ КЪМ ГРАЖДАНСТВО В ГЕРМАНИЯ",
-    page_leave_title: "НАПУСНЕТЕ ГЕРМАНИЯ БЕЗ ПРОБЛЕМ",
+    page_leave_title: "НАПУСНЕТЕ ГЕРМАНИЯ БЕЗ 'ВИСЯЦИ'",
     group_select_nlp_first: "ВСЯКА СИТУАЦИЯ Е УНИКАЛНА",
     group_select_nlp: "За да се гарантира, че ще получите специфичните чек-листове, които ще ви спестят време и пари - моля, изберете опцията, която най-добре описва текущата ви ситуация:",
     group_a_btn: "🟢 Работя / Selbstständig",
@@ -94,7 +94,7 @@ window.AusFinanzTranslationsData.BG = {
 
     // Page: Leave
     leave_title: "НАПУСКАНЕ",
-    leave_subtitle: "БЕЗ ПРОБЛЕМ",
+    leave_subtitle: "БЕЗ 'ВИСЯЦИ'",
     leave_back: "ОБРАТНО КЪМ ИЗБОР НА СИТУАЦИЯ",
     leave_desc: "Напускането също трябва да бъде извършено правилно, за да не оставите дългове след себе си и да не затворите вратите към ЕС завинаги. Вашата ситуация:",
     leave_situation_a_t: "Напускам след работа / ПМЖ",

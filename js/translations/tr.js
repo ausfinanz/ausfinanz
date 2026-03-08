@@ -1,4 +1,4 @@
-﻿window.AusFinanzTranslationsData = window.AusFinanzTranslationsData || {};
+window.AusFinanzTranslationsData = window.AusFinanzTranslationsData || {};
 window.AusFinanzTranslationsData.TR = {
     title: "Finansal İpuçları",
     subtitle: "Almanya’da",
@@ -7,7 +7,7 @@ window.AusFinanzTranslationsData.TR = {
     cta2_text: "Almanya'da yaşıyor ve çalışıyor musunuz? Avrupa'nın en sosyal devletinden maksimum düzeyde yararlanmak mı istiyorsunuz? Butona tıklayın ve ücretsiz kontrol listeleri, danışmanlıklar ve uzman iletişim bilgilerini alın!",
     cta2_btn_full: "ALMANYA'DA VATANDAŞLIĞA HIZLANIN",
     cta3_text: "Almanya'dan temelli mi yoksa bir süreliğine mi ayrılmak istiyorsunuz? Sorun değil, tüm bilgiler burada!",
-    cta3_btn_full: "ALMANYA'DAN BORÇSUZ AYRILIN",
+    cta3_btn_full: "ALMANYA'DAN TERTEMİZ AYRILIN",
     messenger_title: "DOĞRUDAN YAZIN",
     messenger_subtitle: "MESAJLAŞMA UYGULAMALARINDAN",
     messenger_text: "Çekinmeden yazın, her şeyi konuşalım",
@@ -29,7 +29,7 @@ window.AusFinanzTranslationsData.TR = {
     back_to_checklist: "KONTROL LİSTESİNE DÖN",
     page_arrive_title: "ALMANYA'YA GÜVENLE GELİN",
     page_citizen_title: "ALMANYA'DA VATANDAŞLIĞA HIZLANIN",
-    page_leave_title: "ALMANYA'DAN BORÇSUZ AYRILIN",
+    page_leave_title: "ALMANYA'DAN TERTEMİZ AYRILIN",
     group_select_nlp_first: "HER DURUM BENZERSİZDİR",
     group_select_nlp: "Size zaman ve para kazandıracak özel kontrol listelerini aldığınızdan emin olmak için lütfen şu anki durumunuzu en iyi tanımlayan seçeneği seçin:",
     group_a_btn: "🟢 Çalışıyorum / Selbstständig",
@@ -94,7 +94,7 @@ window.AusFinanzTranslationsData.TR = {
 
     // Page: Leave
     leave_title: "AYRILMAK",
-    leave_subtitle: "BORÇSUZ",
+    leave_subtitle: "TERTEMİZ",
     leave_back: "DURUM SEÇİMİNE DÖN",
     leave_desc: "Arkanızda borç bırakmamak ve AB kapılarını sonsuza dek kapatmamak için ayrılışın da doğru yapılması gerekir. Durumunuz:",
     leave_situation_a_t: "İş sonrası / Oturma izni sonrası ayrılıyorum",

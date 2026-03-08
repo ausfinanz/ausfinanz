@@ -1,4 +1,4 @@
-﻿window.AusFinanzTranslationsData = window.AusFinanzTranslationsData || {};
+window.AusFinanzTranslationsData = window.AusFinanzTranslationsData || {};
 window.AusFinanzTranslationsData.KZ = {
     title: "Қаржылық Лайфхактар",
     subtitle: "Германияда",
@@ -7,7 +7,7 @@ window.AusFinanzTranslationsData.KZ = {
     cta2_text: "Германияда тұрып, жұмыс істеп жатырсыз ба және Еуропаның ең әлеуметтік мемлекетінен барынша пайда алғыңыз келе ме? Батырманы басып, тегін чек-листерді, кеңестерді және мамандардың байланыстарын алыңыз!",
     cta2_btn_full: "ГЕРМАНИЯДА БЮРГЕРГЕ ДЕЙІН ЖЫЛДАМДАТУ",
     cta3_text: "Германиядан біржола немесе уақытша кеткіңіз келе ме? Мәселе жоқ, мұнда барлық ақпарат бар!",
-    cta3_btn_full: "ГЕРМАНИЯДАН ҚАРЫСЫ КЕТУ",
+    cta3_btn_full: "ГЕРМАНИЯДАН 'МӘСЕЛЕСІЗ' КЕТУ",
     messenger_title: "ТІКЕЛЕЙ ЖАЫҢЫ",
     messenger_subtitle: "МЕССЕНДЖЕРЛЕРГЕ",
     messenger_text: "Батыл жазыңыз, бәрін талқылаймыз",
@@ -29,7 +29,7 @@ window.AusFinanzTranslationsData.KZ = {
     back_to_checklist: "ЧЕК-ЛИСТЕР ТІІМІНЕ ОРАЛУ",
     page_arrive_title: "ГЕРМАНИЯҒА СЕНІМДІ ТҮРДЕ КЕЛУ",
     page_citizen_title: "ГЕРМАНИЯҒА БЮРГЕРГЕ ДЕЙІН ЖЫЛДАМДАТУ",
-    page_leave_title: "ГЕРМАНИЯДАН ҚАРЫСЫ КЕТУ",
+    page_leave_title: "ГЕРМАНИЯДАН 'МӘСЕЛЕСІЗ' КЕТУ",
     group_select_nlp_first: "ӘРБІР ЖАҒДАЙ БІРЕГЕЙ",
     group_select_nlp: "Уақытыңыз бен ақшаңызды үнемдейтін нақты чек-листерді алу үшін - қазіргі жағдайыңызға ең жақын нұсқаны таңдаңыз:",
     group_a_btn: "🟢 Мен жұмыс істеймін / Selbstständig",
@@ -94,7 +94,7 @@ window.AusFinanzTranslationsData.KZ = {
 
     // Page: Leave
     leave_title: "КЕТУ",
-    leave_subtitle: "ҚАРЫСЫ",
+    leave_subtitle: "'МӘСЕЛЕСІЗ'",
     leave_back: "ЖАҒДАЙДЫ ТАҢДАУҒА ОРАЛУ",
     leave_desc: "Артыңызда қарыз қалдырмау және ЕО-ға есікті біржола жауып алмау үшін дұрыс кету керек. Сіздің жағдайыңыз:",
     leave_situation_a_t: "Жұмыстан кейін / Тұрақты тұрудан кейін кетіп жатырмын",

@@ -1,4 +1,4 @@
-﻿window.AusFinanzTranslationsData = window.AusFinanzTranslationsData || {};
+window.AusFinanzTranslationsData = window.AusFinanzTranslationsData || {};
 window.AusFinanzTranslationsData.RO = {
     title: "LifeHack-uri Financiare",
     subtitle: "în Germania",
@@ -7,7 +7,7 @@ window.AusFinanzTranslationsData.RO = {
     cta2_text: "Locuiești și muncești în Germania și vrei să obții maximum de la cel mai social stat din Europa? Apasă butonul și primești gratuit checklist-uri, consultații și contacte de specialiști!",
     cta2_btn_full: "ACCELEREAZĂ CĂTRE STATUTUL DE CETĂȚEAN",
     cta3_text: "Vrei să pleci din Germania definitiv sau pentru o perioadă? Nicio problemă, toate informațiile sunt aici!",
-    cta3_btn_full: "PLEACĂ FĂRĂ OBLIGAȚII DIN GERMANIA",
+    cta3_btn_full: "PLEACĂ FĂRĂ 'COZI' DIN GERMANIA",
     messenger_title: "SCRIE-NE DIRECT",
     messenger_subtitle: "PE MESSENGER",
     messenger_text: "Scrie cu încredere, vom discuta totul",
@@ -29,7 +29,7 @@ window.AusFinanzTranslationsData.RO = {
     back_to_checklist: "ÎNAPOI LA LISTA DE CHECKLIST-URI",
     page_arrive_title: "VINO CU ÎNCREDERE ÎN GERMANIA",
     page_citizen_title: "ACCELEREAZĂ CĂTRE CETĂȚEAN",
-    page_leave_title: "PLEACĂ FĂRĂ OBLIGAȚII DIN GERMANIA",
+    page_leave_title: "PLEACĂ FĂRĂ 'COZI' DIN GERMANIA",
     group_select_nlp_first: "FIECARE SITUAȚIE ESTE UNICĂ",
     group_select_nlp: "Pentru a vă asigura că primiți checklist-urile specifice care vă vor economisi timp și bani - vă rugăm să selectați opțiunea care descrie cel mai bine situația dumneavoastră actuală:",
     group_a_btn: "🟢 Lucrez / Selbstständig",
@@ -94,7 +94,7 @@ window.AusFinanzTranslationsData.RO = {
 
     // Page: Leave
     leave_title: "PLECARE",
-    leave_subtitle: "FĂRĂ OBLIGAȚII",
+    leave_subtitle: "FĂRĂ 'COZI'",
     leave_back: "ÎNAPOI LA ALEGEREA SITUAȚIEI",
     leave_desc: "Plecarea trebuie, de asemenea, făcută corect, pentru a nu lăsa datorii în urmă și pentru a nu închide ușile către UE pentru totdeauna. Situația ta:",
     leave_situation_a_t: "Plec după muncă / PR",

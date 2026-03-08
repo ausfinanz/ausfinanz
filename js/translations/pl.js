@@ -1,4 +1,4 @@
-﻿window.AusFinanzTranslationsData = window.AusFinanzTranslationsData || {};
+window.AusFinanzTranslationsData = window.AusFinanzTranslationsData || {};
 window.AusFinanzTranslationsData.PL = {
     title: "Finansowe LifeHacki",
     subtitle: "w Niemczech",
@@ -7,7 +7,7 @@ window.AusFinanzTranslationsData.PL = {
     cta2_text: "Mieszkasz i pracujesz w Niemczech i chcesz wycisnąć maksimum z najbardziej opiekuńczego państwa Europy? Kliknij przycisk i odbierz bezpłatne checklisty, konsultacje i kontakty do specjalistów!",
     cta2_btn_full: "PRZYSPIESZ DO OBYWATELA W NIEMCZECH",
     cta3_text: "Chcesz wyjechać z Niemiec na stałe lub na jakiś czas? Żaden problem, tu znajdziesz wszystkie informacje!",
-    cta3_btn_full: "WYJECHAĆ BEZ ZALEGŁOŚCI Z NIEMIEC",
+    cta3_btn_full: "WYJECHAĆ BEZ 'OGONÓW' Z NIEMIEC",
     messenger_title: "NAPISZ BEZPOŚREDNIO",
     messenger_subtitle: "W KOMUNIKATORACH",
     messenger_text: "Pisz śmiało, wszystko omówimy",
@@ -29,7 +29,7 @@ window.AusFinanzTranslationsData.PL = {
     back_to_checklist: "POWRÓT DO LISTY CHECKLIST",
     page_arrive_title: "PEWNIE PRZYJECHAĆ DO NIEMIEC",
     page_citizen_title: "PRZYSPIESZ DO OBYWATELA W NIEMCZECH",
-    page_leave_title: "WYJECHAĆ BEZ ZALEGŁOŚCI Z NIEMIEC",
+    page_leave_title: "WYJECHAĆ BEZ 'OGONÓW' Z NIEMIEC",
     group_select_nlp_first: "KAŻDA SYTUACJA JEST WYJĄTKOWA",
     group_select_nlp: "Aby zapewnić Ci otrzymanie konkretnych checklist, które zaoszczędzą Twój czas i pieniądze - prosimy o wybranie opcji, która najlepiej opisuje Twoją obecną sytuację:",
     group_a_btn: "🟢 Pracuję / Selbstständig",
@@ -94,7 +94,7 @@ window.AusFinanzTranslationsData.PL = {
 
     // Page: Leave
     leave_title: "WYJECHAĆ",
-    leave_subtitle: "BEZ ZALEGŁOŚCI",
+    leave_subtitle: "BEZ 'OGONÓW'",
     leave_back: "POWRÓT DO WYBORU SYTUACJI",
     leave_desc: "Wyjazd również musi być przeprowadzony prawidłowo, aby nie zostawić po sobie długów i nie zamknąć na zawsze drzwi do UE. Twoja sytuacja:",
     leave_situation_a_t: "Wyjeżdżam po pracy / stałym pobycie",

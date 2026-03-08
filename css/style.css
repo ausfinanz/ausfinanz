@@ -50,8 +50,8 @@
   --space-3xl: 3rem;
 
   /* Typography - Bold & Modern */
-  --font-main: 'Proxima Nova', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-display: 'Montserrat', 'Proxima Nova', sans-serif;
+  --font-main: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Montserrat', sans-serif;
   /* Bold headers */
 
   /* Layout */

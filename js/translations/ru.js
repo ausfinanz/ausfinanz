@@ -1,4 +1,4 @@
-﻿window.AusFinanzTranslationsData = window.AusFinanzTranslationsData || {};
+window.AusFinanzTranslationsData = window.AusFinanzTranslationsData || {};
 window.AusFinanzTranslationsData.RU = {
     title: "Финансовые ЛайфХаки",
     subtitle: "в Германии",
@@ -7,7 +7,7 @@ window.AusFinanzTranslationsData.RU = {
     cta2_text: "Живёшь и работаешь в Германии и хочешь получить максимум от самого социального государства Европы? Жми на кнопку и получай бесплатно чеклисты, консультации и контакты специалистов!",
     cta2_btn_full: "УСКОРИТЬСЯ ДО БЮРГЕРА В ГЕРМАНИИ",
     cta3_text: "Хочешь уехать из Германии навсегда или на время? Не вопрос, тут вся информация!",
-    cta3_btn_full: "УЕХАТЬ БЕЗ ПРОБЛЕМ ИЗ ГЕРМАНИИ",
+    cta3_btn_full: "УЕХАТЬ БЕЗ \"ХВОСТОВ\" ИЗ ГЕРМАНИИ",
     messenger_title: "ПИШИТЕ НАПРЯМУЮ",
     messenger_subtitle: "В МЕССЕНДЖЕРЫ",
     messenger_text: "Пишите смело, всё обсудим",
@@ -29,7 +29,7 @@ window.AusFinanzTranslationsData.RU = {
     back_to_checklist: "К СПИСКУ ЧЕКЛИСТОВ",
     page_arrive_title: "УВЕРЕННО ПРИЕХАТЬ В ГЕРМАНИЮ",
     page_citizen_title: "УСКОРИТЬСЯ ДО БЮРГЕРА В ГЕРМАНИИ",
-    page_leave_title: "УЕХАТЬ БЕЗ ПРОБЛЕМ ИЗ ГЕРМАНИИ",
+    page_leave_title: "УЕХАТЬ БЕЗ \"ХВОСТОВ\" ИЗ ГЕРМАНИИ",
     group_select_nlp_first: "КАЖДАЯ СИТУАЦИЯ УНИКАЛЬНА",
     group_select_nlp: "Чтобы вы получили именно те чеклисты, которые сэкономят вам время и деньги - выберите, что ближе к вашей ситуации прямо сейчас:",
     group_a_btn: "🟢 Я работаю / Selbstständig",
@@ -94,7 +94,7 @@ window.AusFinanzTranslationsData.RU = {
 
     // Page: Leave
     leave_title: "УЕХАТЬ",
-    leave_subtitle: "БЕЗ ПРОБЛЕМ",
+    leave_subtitle: "БЕЗ \"ХВОСТОВ\"",
     leave_back: "К ВЫБОРУ СИТУАЦИИ",
     leave_desc: "Уезжать тоже нужно правильно, чтобы не оставить за собой долги и не закрыть двери в ЕС навсегда. Ваша ситуация:",
     leave_situation_a_t: "Уезжаю после работы / ПМЖ",
