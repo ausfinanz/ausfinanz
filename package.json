@@ -1,0 +1,12 @@
+{
+  "name": "ausfinanz",
+  "version": "2.0.0",
+  "description": "AusFinanz — Financial LifeHacks for expats in Germany",
+  "private": true,
+  "scripts": {
+    "check": "node scripts/check-translations.js"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

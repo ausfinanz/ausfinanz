@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Закрыть от индексации служебные страницы
+Disallow: /html/admin/
+Disallow: /html/booking/calendar.html
+
+# Sitemap
+Sitemap: https://ausfinanz.github.io/ausfinanz/sitemap.xml

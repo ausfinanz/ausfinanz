@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Страница не найдена | AusFinanz</title>
+  <meta name="description" content="Страница не найдена. Вернитесь на главную AusFinanz.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+  <!-- Local Fonts -->
+  <link rel="stylesheet" href="fonts/fonts.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .error-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+
+    .error-page__code {
+      font-size: clamp(6rem, 20vw, 10rem);
+      font-weight: 900;
+      line-height: 1;
+      background: linear-gradient(135deg, #FE2C55, #25F4EE);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .error-page__title {
+      font-size: clamp(1.25rem, 4vw, 1.75rem);
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .error-page__subtitle {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.6);
+      max-width: 320px;
+    }
+
+    .error-page__actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      width: 100%;
+      max-width: 320px;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="error-page">
+    <div class="error-page__code">404</div>
+    <h1 class="error-page__title">Страница не найдена</h1>
+    <p class="error-page__subtitle">
+      Возможно, ссылка устарела или страница была перемещена.
+    </p>
+
+    <div class="error-page__actions">
+      <a href="index.html" class="btn btn--primary btn--main">
+        НА ГЛАВНУЮ
+      </a>
+      <a href="html/arrive.html" class="btn btn--outline">
+        ПРИЕХАТЬ В ГЕРМАНИЮ
+      </a>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ВАЖНО: Если у сайта кастомный домен, замените базовый URL
+  с https://ausfinanz.github.io/ausfinanz
+  на https://ВАШ-ДОМЕН (например https://ausfinanz.de)
+  и обновите также robots.txt
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Главная -->
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Основные разделы -->
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/arrive.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/citizen.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/leave.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Бронирование -->
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/booking/registration.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Чеклисты: Arrive A (самозанятые) -->
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_01.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_02.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_03.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_04.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_05.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_06.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_07.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_08.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_09.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_10.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_11.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_12.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_13.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_14.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_15.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_a_16.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Чеклисты: Arrive B (по найму) -->
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_01.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_02.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_03.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_04.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_05.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_06.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_07.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_08.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_09.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_10.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_11.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_12.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_13.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_14.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_15.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_16.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_17.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/arrive_b_18.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Чеклисты: Citizen A (самозанятые) -->
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_01.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_02.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_03.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_04.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_05.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_06.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_07.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_08.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_09.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_10.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_11.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_12.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_13.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_14.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_15.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_16.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_17.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_a_18.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Чеклисты: Citizen B (по найму) -->
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_01.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_02.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_03.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_04.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_05.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_06.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_07.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_08.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_09.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_10.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_11.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_12.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_13.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_14.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_15.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/citizen_b_16.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Чеклисты: Leave A (самозанятые) -->
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_01.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_02.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_03.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_04.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_05.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_06.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_07.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_08.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_09.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_10.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_11.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_12.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_13.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_14.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_a_15.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Чеклисты: Leave B (по найму) -->
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_b_.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_b_01.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_b_02.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_b_03.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_b_04.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_b_05.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_b_06.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_b_07.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_b_08.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_b_09.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_b_10.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_b_11.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_b_12.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_b_13.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ausfinanz.github.io/ausfinanz/html/checklists/leave_b_14.html</loc><lastmod>2026-03-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Правовые страницы -->
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/law/impressum.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/law/datenschutz.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/law/stornierung.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/law/agb.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/law/cookie.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/law/beschwerde.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ausfinanz.github.io/ausfinanz/html/law/jobs.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>

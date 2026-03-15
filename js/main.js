@@ -19,67 +19,63 @@ const AusFinanz = {
     loadGoogleAnalytics() {
         // Prevent multiple loading
         if (window.gaLoaded) {
-            // If already loaded, track page view
             this.trackPageViewGA();
             return;
         }
 
-        // Check if we should wait for CCM19 consent
+        // Returns true ONLY when CCM19 is loaded AND analytics consent is given.
+        // Returns false when CCM19 is not yet available or consent is not given.
+        // FIX: previously returned true when ccm19 was undefined, loading GA before consent.
         const checkConsentAndLoad = () => {
-            // Check if CCM19 is available
-            if (typeof ccm19 !== 'undefined') {
-                // Get consent status from CCM19
-                // 'analytics' or 'statistic' are common category names
-                const consent = ccm19.getConsent ? ccm19.getConsent() : ccm19.hasConsent;
-                
-                let hasAnalyticsConsent = false;
-                
-                // Try different CCM19 API methods
-                if (typeof consent === 'function') {
-                    hasAnalyticsConsent = consent('analytics') || consent('statistic') || consent('statistics');
-                } else if (typeof consent === 'object' && consent !== null) {
-                    hasAnalyticsConsent = consent.analytics || consent.statistics || consent.statistic || false;
-                }
-
-                if (!hasAnalyticsConsent) {
-                    console.log('Waiting for CCM19 analytics consent...');
-                    return false;
-                }
+            if (typeof ccm19 === 'undefined') {
+                // CCM19 not loaded yet — do NOT load GA
+                return false;
             }
+
+            // Get consent status from CCM19
+            const consent = ccm19.getConsent ? ccm19.getConsent() : ccm19.hasConsent;
+
+            let hasAnalyticsConsent = false;
+
+            // Try different CCM19 API methods
+            if (typeof consent === 'function') {
+                hasAnalyticsConsent = consent('analytics') || consent('statistic') || consent('statistics');
+            } else if (typeof consent === 'object' && consent !== null) {
+                hasAnalyticsConsent = consent.analytics || consent.statistics || consent.statistic || false;
+            }
+
+            if (!hasAnalyticsConsent) {
+                console.log('Waiting for CCM19 analytics consent...');
+                return false;
+            }
+
             return true;
         };
 
-        // If no consent yet, wait for it
-        if (!checkConsentAndLoad()) {
-            // Listen for CCM19 consent changes
-            const waitForConsent = () => {
-                if (checkConsentAndLoad()) {
-                    this.loadGAInternal();
-                    // Remove listener after consent is given
-                    if (typeof ccm19 !== 'undefined' && ccm19.off) {
-                        ccm19.off('consentChanged', waitForConsent);
-                    }
-                }
-            };
-
-            // Try to listen for consent changes
-            if (typeof ccm19 !== 'undefined') {
-                if (ccm19.on) {
-                    ccm19.on('consentChanged', waitForConsent);
-                }
-                // Also check periodically in case CCM19 doesn't fire events
-                const consentCheckInterval = setInterval(() => {
-                    if (checkConsentAndLoad()) {
-                        clearInterval(consentCheckInterval);
-                        this.loadGAInternal();
-                    }
-                }, 1000);
-            }
+        // Consent already given (e.g. returning visitor), load GA immediately
+        if (checkConsentAndLoad()) {
+            this.loadGAInternal();
             return;
         }
 
-        // Consent already given, load GA
-        this.loadGAInternal();
+        // Otherwise: wait for CCM19 to load and for user consent
+        const waitForConsent = () => {
+            if (checkConsentAndLoad()) {
+                clearInterval(consentCheckInterval);
+                if (typeof ccm19 !== 'undefined' && ccm19.off) {
+                    ccm19.off('consentChanged', waitForConsent);
+                }
+                this.loadGAInternal();
+            }
+        };
+
+        // Listen for CCM19 consent changes
+        if (typeof ccm19 !== 'undefined' && ccm19.on) {
+            ccm19.on('consentChanged', waitForConsent);
+        }
+
+        // Polling fallback: covers both CCM19 not yet loaded and consent not yet given
+        const consentCheckInterval = setInterval(waitForConsent, 1000);
     },
 
     /**
